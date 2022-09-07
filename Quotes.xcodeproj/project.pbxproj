@@ -7,19 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		831C20C128C812FB000F636D /* Tasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831C20C028C812FB000F636D /* Tasks.swift */; };
+		831C20C428C82869000F636D /* wattage.sh in Resources */ = {isa = PBXBuildFile; fileRef = 831C20C328C82869000F636D /* wattage.sh */; };
 		834BF26528C7991100EE6CA9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834BF26428C7991100EE6CA9 /* AppDelegate.swift */; };
 		834BF26728C7991100EE6CA9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834BF26628C7991100EE6CA9 /* ViewController.swift */; };
 		834BF26928C7991200EE6CA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 834BF26828C7991200EE6CA9 /* Assets.xcassets */; };
 		834BF26C28C7991200EE6CA9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 834BF26A28C7991200EE6CA9 /* Main.storyboard */; };
+		834BF27528C79F2400EE6CA9 /* QuotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834BF27428C79F2400EE6CA9 /* QuotesViewController.swift */; };
+		834BF27728C7A51B00EE6CA9 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834BF27628C7A51B00EE6CA9 /* Quote.swift */; };
+		834BF27928C7AAC000EE6CA9 /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834BF27828C7AAC000EE6CA9 /* EventMonitor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		831C20C028C812FB000F636D /* Tasks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tasks.swift; sourceTree = "<group>"; };
+		831C20C328C82869000F636D /* wattage.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = wattage.sh; sourceTree = "<group>"; };
 		834BF26128C7991100EE6CA9 /* Quotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		834BF26428C7991100EE6CA9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		834BF26628C7991100EE6CA9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		834BF26828C7991200EE6CA9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		834BF26B28C7991200EE6CA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		834BF26D28C7991200EE6CA9 /* Quotes.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Quotes.entitlements; sourceTree = "<group>"; };
+		834BF27328C79D0900EE6CA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		834BF27428C79F2400EE6CA9 /* QuotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesViewController.swift; sourceTree = "<group>"; };
+		834BF27628C7A51B00EE6CA9 /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
+		834BF27828C7AAC000EE6CA9 /* EventMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventMonitor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,11 +63,17 @@
 		834BF26328C7991100EE6CA9 /* Quotes */ = {
 			isa = PBXGroup;
 			children = (
+				834BF27328C79D0900EE6CA9 /* Info.plist */,
 				834BF26428C7991100EE6CA9 /* AppDelegate.swift */,
+				834BF27628C7A51B00EE6CA9 /* Quote.swift */,
 				834BF26628C7991100EE6CA9 /* ViewController.swift */,
 				834BF26828C7991200EE6CA9 /* Assets.xcassets */,
 				834BF26A28C7991200EE6CA9 /* Main.storyboard */,
+				834BF27828C7AAC000EE6CA9 /* EventMonitor.swift */,
 				834BF26D28C7991200EE6CA9 /* Quotes.entitlements */,
+				834BF27428C79F2400EE6CA9 /* QuotesViewController.swift */,
+				831C20C028C812FB000F636D /* Tasks.swift */,
+				831C20C328C82869000F636D /* wattage.sh */,
 			);
 			path = Quotes;
 			sourceTree = "<group>";
@@ -119,6 +136,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				831C20C428C82869000F636D /* wattage.sh in Resources */,
 				834BF26928C7991200EE6CA9 /* Assets.xcassets in Resources */,
 				834BF26C28C7991200EE6CA9 /* Main.storyboard in Resources */,
 			);
@@ -131,8 +149,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				834BF27728C7A51B00EE6CA9 /* Quote.swift in Sources */,
+				834BF27928C7AAC000EE6CA9 /* EventMonitor.swift in Sources */,
 				834BF26728C7991100EE6CA9 /* ViewController.swift in Sources */,
+				834BF27528C79F2400EE6CA9 /* QuotesViewController.swift in Sources */,
 				834BF26528C7991100EE6CA9 /* AppDelegate.swift in Sources */,
+				831C20C128C812FB000F636D /* Tasks.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +297,7 @@
 				DEVELOPMENT_TEAM = 2BZ9K89WJH;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Quotes/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
@@ -302,6 +325,7 @@
 				DEVELOPMENT_TEAM = 2BZ9K89WJH;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Quotes/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
